@@ -26,10 +26,11 @@ async function startDB() {
 
 async function stopDB() {
   await mongoose.disconnect();
-  mongoServer && (await mongoServer.stop());
+  mongoServer && await mongoServer.stop();
 }
 
 beforeAll(startDB);
+afterAll(stopDB);
 
 if (!module.parent) {
   describe('supergoose', () => {
@@ -38,5 +39,3 @@ if (!module.parent) {
     });
   });
 }
-
-afterAll(stopDB);
