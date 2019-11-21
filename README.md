@@ -7,14 +7,10 @@
 * [travis](https://travis-ci.com/morgan-401-advanced-javascript/lab08)
 * [front-end](https://lab8mts.herokuapp.com/)
 
-#### Documentation
-* [api docs](http://xyz.com) (API servers)
-* [jsdoc](http://xyz.com) (Server assignments)
-
 ### Setup
 #### `.env` requirements
 * `PORT` - 3000
-* `MONGODB_URI` - URL to the running mongo instance/db
+* `MONGODB_URI` - mongodb://127.0.0.1:27017/app
 
 #### Running the app
 * `npm start`
