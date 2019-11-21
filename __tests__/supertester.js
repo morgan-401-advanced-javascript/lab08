@@ -30,7 +30,6 @@ async function stopDB() {
 }
 
 beforeAll(startDB);
-afterAll(stopDB);
 
 if (!module.parent) {
   describe('supergoose', () => {
@@ -39,3 +38,5 @@ if (!module.parent) {
     });
   });
 }
+
+afterAll(stopDB);
